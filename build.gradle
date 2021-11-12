@@ -20,3 +20,8 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+// Don't build plain.jar file. See https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/
+jar {
+	enabled = false
+}
